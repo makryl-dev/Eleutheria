@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://txv725dvd0gx"]
 
 [ext_resource type="Texture2D" uid="uid://b5m3h25irp4xh" path="res://assets/PlayerWalking.png" id="1_1ws4p"]
+[ext_resource type="Script" uid="uid://byyemf3fie7dq" path="res://src/Player/PlayerMovement.gd" id="2_rwoh2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rwoh2"]
 atlas = ExtResource("1_1ws4p")
@@ -163,3 +164,7 @@ shape = SubResource("RectangleShape2D_eyaco")
 [node name="PlayerCamera" type="Camera2D" parent="." unique_id=756526006]
 zoom = Vector2(2.5, 2.5)
 position_smoothing_enabled = true
+
+[node name="PlayerMovement" type="Node2D" parent="." unique_id=1493389083]
+script = ExtResource("2_rwoh2")
+metadata/_custom_type_script = "uid://byyemf3fie7dq"
