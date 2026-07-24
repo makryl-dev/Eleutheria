@@ -154,6 +154,7 @@ animations = [{
 size = Vector2(16, 8)
 
 [node name="Player" type="CharacterBody2D" unique_id=1973862595]
+motion_mode = 1
 
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1702494365]
 rotation = -1.5707964
