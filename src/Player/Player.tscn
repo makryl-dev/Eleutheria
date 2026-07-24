@@ -161,6 +161,7 @@ sprite_frames = SubResource("SpriteFrames_ey032")
 animation = &"Idle"
 
 [node name="Hitbox" type="CollisionShape2D" parent="." unique_id=2115082384]
+visible = false
 rotation = -1.5707964
 shape = SubResource("RectangleShape2D_eyaco")
 
