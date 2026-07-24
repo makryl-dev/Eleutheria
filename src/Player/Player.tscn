@@ -156,10 +156,12 @@ size = Vector2(16, 8)
 [node name="Player" type="CharacterBody2D" unique_id=1973862595]
 
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1702494365]
+rotation = -1.5707964
 sprite_frames = SubResource("SpriteFrames_ey032")
 animation = &"Idle"
 
 [node name="Hitbox" type="CollisionShape2D" parent="." unique_id=2115082384]
+rotation = -1.5707964
 shape = SubResource("RectangleShape2D_eyaco")
 
 [node name="PlayerCamera" type="Camera2D" parent="." unique_id=756526006]
