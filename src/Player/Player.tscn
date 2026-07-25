@@ -168,7 +168,6 @@ shape = SubResource("RectangleShape2D_eyaco")
 
 [node name="PlayerCamera" type="Camera2D" parent="." unique_id=756526006]
 zoom = Vector2(2.5, 2.5)
-position_smoothing_enabled = true
 
 [node name="PlayerMovement" type="Node2D" parent="." unique_id=1493389083]
 script = ExtResource("2_rwoh2")
