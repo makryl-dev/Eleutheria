@@ -18,8 +18,8 @@ func _physics_process(delta: float) -> void:
 	parent.velocity = direction * speed
 	parent.move_and_slide()
 	
-	if sprite:
-		if direction != Vector2.ZERO:
-			sprite.play("Walking")
-		else:
-			sprite.play("Idle")
+	if direction != Vector2.ZERO:
+		parent.rotation = direction.angle()
+		sprite.play("Walking")
+	else:
+		sprite.play("Idle")
