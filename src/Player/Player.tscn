@@ -159,7 +159,8 @@ motion_mode = 1
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1702494365]
 rotation = -1.5707964
 sprite_frames = SubResource("SpriteFrames_ey032")
-animation = &"Walking"
+animation = &"Idle"
+autoplay = "Idle"
 
 [node name="Hitbox" type="CollisionShape2D" parent="." unique_id=2115082384]
 visible = false
