@@ -147,7 +147,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"Walking",
-"speed": 5.0
+"speed": 24.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eyaco"]
@@ -159,7 +159,7 @@ motion_mode = 1
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1702494365]
 rotation = -1.5707964
 sprite_frames = SubResource("SpriteFrames_ey032")
-animation = &"Idle"
+animation = &"Walking"
 
 [node name="Hitbox" type="CollisionShape2D" parent="." unique_id=2115082384]
 visible = false
