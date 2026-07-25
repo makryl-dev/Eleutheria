@@ -11,4 +11,5 @@ func _physics_process(delta: float) -> void:
 	if not parent:
 		return
 	
-	parent.look_at(get_global_mouse_position())
+	if Input.is_action_pressed("secondary_action"):
+		parent.look_at(get_global_mouse_position())

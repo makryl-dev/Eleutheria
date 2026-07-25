@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b5m3h25irp4xh" path="res://assets/PlayerWalking.png" id="1_1ws4p"]
 [ext_resource type="Script" uid="uid://byyemf3fie7dq" path="res://src/Player/PlayerMovement.gd" id="2_rwoh2"]
+[ext_resource type="Script" uid="uid://cajpngmewmtbq" path="res://src/Player/PlayerRotation.gd" id="3_vy1tf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rwoh2"]
 atlas = ExtResource("1_1ws4p")
@@ -171,3 +172,7 @@ zoom = Vector2(2.5, 2.5)
 [node name="PlayerMovement" type="Node2D" parent="." unique_id=1493389083]
 script = ExtResource("2_rwoh2")
 metadata/_custom_type_script = "uid://byyemf3fie7dq"
+
+[node name="PlayerRotation" type="Node2D" parent="." unique_id=1730907668]
+script = ExtResource("3_vy1tf")
+metadata/_custom_type_script = "uid://cajpngmewmtbq"
