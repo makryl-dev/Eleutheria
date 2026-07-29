@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dpdbmybfpkadc" path="res://assets/PlayerAnimation.png" id="1_vy1tf"]
 [ext_resource type="Script" uid="uid://byyemf3fie7dq" path="res://src/Player/PlayerMovement.gd" id="2_rwoh2"]
 [ext_resource type="Script" uid="uid://cajpngmewmtbq" path="res://src/Player/PlayerRotation.gd" id="3_vy1tf"]
+[ext_resource type="Script" uid="uid://bg7s2qqocp3cy" path="res://src/Components/HealthComponent.gd" id="4_4pjjn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vy1tf"]
 atlas = ExtResource("1_vy1tf")
@@ -162,3 +163,7 @@ metadata/_custom_type_script = "uid://byyemf3fie7dq"
 [node name="PlayerRotation" type="Node2D" parent="." unique_id=1730907668]
 script = ExtResource("3_vy1tf")
 metadata/_custom_type_script = "uid://cajpngmewmtbq"
+
+[node name="HealthComponent" type="Node" parent="." unique_id=1074645135]
+script = ExtResource("4_4pjjn")
+metadata/_custom_type_script = "uid://bg7s2qqocp3cy"
