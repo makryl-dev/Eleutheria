@@ -137,7 +137,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eyaco"]
 size = Vector2(16, 29)
 
-[node name="Player" type="CharacterBody2D" unique_id=1973862595]
+[node name="Player" type="CharacterBody2D" unique_id=1973862595 groups=["player"]]
 collision_layer = 2
 motion_mode = 1
 
