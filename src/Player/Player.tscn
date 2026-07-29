@@ -74,9 +74,8 @@ motion_mode = 1
 
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1702494365]
 sprite_frames = SubResource("SpriteFrames_ey032")
-animation = &"Walking"
+animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.15084146
 
 [node name="Hitbox" type="CollisionShape2D" parent="." unique_id=2115082384]
 visible = false
@@ -88,7 +87,6 @@ zoom = Vector2(2, 2)
 
 [node name="PlayerMovement" type="Node2D" parent="." unique_id=1493389083]
 script = ExtResource("2_rwoh2")
-speed = 200.0
 metadata/_custom_type_script = "uid://byyemf3fie7dq"
 
 [node name="PlayerRotation" type="Node2D" parent="." unique_id=1730907668]

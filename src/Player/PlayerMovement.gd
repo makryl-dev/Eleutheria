@@ -1,6 +1,9 @@
 class_name PlayerMovement
 extends Node2D
-@export var speed = 300.0
+
+@export var speed = 150.0
+@export var sprint_multiplier = 1.75
+
 var parent: CharacterBody2D
 var sprite: AnimatedSprite2D
 
@@ -14,12 +17,19 @@ func _physics_process(delta: float) -> void:
 	if not parent:
 		return
 	
+	var is_sprinting = Input.is_action_pressed("sprint")
+	var current_speed = speed * (sprint_multiplier if is_sprinting else 1.0)
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	parent.velocity = direction * speed
+	
+	parent.velocity = direction * current_speed
 	parent.move_and_slide()
 	
 	if direction != Vector2.ZERO:
 		parent.rotation = direction.angle()
-		sprite.play("Walking")
+		if sprite:
+			sprite.speed_scale = (sprint_multiplier if is_sprinting else 1.0)
+			sprite.play("Walking")
 	else:
-		sprite.play("Idle")
+		if sprite:
+			sprite.speed_scale = 1.0
+			sprite.play("Idle")
