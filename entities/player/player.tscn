@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://txv725dvd0gx"]
 
-[ext_resource type="Texture2D" uid="uid://dpdbmybfpkadc" path="res://assets/PlayerAnimation.png" id="1_vy1tf"]
-[ext_resource type="Script" uid="uid://byyemf3fie7dq" path="res://src/Player/PlayerMovement.gd" id="2_rwoh2"]
-[ext_resource type="Script" uid="uid://cajpngmewmtbq" path="res://src/Player/PlayerRotation.gd" id="3_vy1tf"]
-[ext_resource type="Script" uid="uid://bg7s2qqocp3cy" path="res://src/Components/HealthComponent.gd" id="4_4pjjn"]
+[ext_resource type="Texture2D" uid="uid://dpdbmybfpkadc" path="res://assets/textures/entities/player_animation.png" id="1_vy1tf"]
+[ext_resource type="Script" uid="uid://byyemf3fie7dq" path="res://entities/player/player_movement.gd" id="2_rwoh2"]
+[ext_resource type="Script" uid="uid://cajpngmewmtbq" path="res://entities/player/player_rotation.gd" id="3_vy1tf"]
+[ext_resource type="Script" uid="uid://bg7s2qqocp3cy" path="res://components/health/health_component.gd" id="4_4pjjn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vy1tf"]
 atlas = ExtResource("1_vy1tf")
