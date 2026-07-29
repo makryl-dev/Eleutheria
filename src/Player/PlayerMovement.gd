@@ -18,7 +18,8 @@ func _physics_process(delta: float) -> void:
 		return
 	
 	var is_sprinting = Input.is_action_pressed("sprint")
-	var current_speed = speed * (sprint_multiplier if is_sprinting else 1.0)
+	var is_rotating = Input.is_action_pressed("secondary_action")
+	var current_speed = speed * (sprint_multiplier if is_sprinting else 1.0) * (0.5 if is_rotating else 1.0)
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	
 	parent.velocity = direction * current_speed
@@ -28,7 +29,10 @@ func _physics_process(delta: float) -> void:
 		parent.rotation = direction.angle()
 		if sprite:
 			sprite.speed_scale = (sprint_multiplier if is_sprinting else 1.0)
-			sprite.play("Walking")
+			if is_rotating:
+				sprite.play("Rotating")
+			else:
+				sprite.play("Walking")
 	else:
 		if sprite:
 			sprite.speed_scale = 1.0
